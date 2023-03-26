@@ -1,0 +1,284 @@
+.rightside {
+  padding: 1rem;
+}
+.righttop {
+  border-radius: 10px;
+  background-color: rgb(44, 111, 153);
+  color: #fff;
+  /* width: 100%; */
+  padding-left: 1rem;
+  /* margin: 1rem;
+  padding: 1rem; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* three columns in the first row */
+  grid-auto-rows: auto; /* auto height for the rows */
+  gap: 10px; /* space between the cards */
+  margin-bottom: 2rem;
+}
+
+.righttopcard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.righttopcard img {
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.bottomtop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rightsidebottom {
+  background-color: rgb(44, 111, 153);
+  color: #fff;
+  border-radius: 10px;
+}
+.bottomtopleft {
+  margin-left: 1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown p {
+  text-align: center;
+  width: 5rem;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 0.2rem;
+}
+
+.dropdown-content {
+  color: black;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.dropdown a:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.datepicker {
+  position: relative;
+}
+.datebutton {
+  background: none;
+  padding: 0.2rem;
+  margin-right: 1rem;
+  color: #fff;
+  border: 1px solid white;
+}
+
+.datepicker-popup {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.datepicker-popup input {
+  height: 1rem;
+  width: 2rem;
+}
+.daterangepicker .rdrCalendarWrapper {
+  border: 2px solid black;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.daterangepicker .rdrMonth {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.daterangepicker .rdrDay {
+  /* width: 30px;
+  height: 30px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.daterangepicker .rdrDayStartPreview,
+.rdrDayEndPreview {
+  /* background-color: blue; */
+  color: white;
+}
+
+.daterangepicker .rdrSelected {
+  background-color: blue;
+  color: white;
+}
+
+.react-calendar {
+  font-size: 12px;
+  max-width: 250px;
+}
+
+/* Table CSS */
+.tabledata {
+  width: 100%;
+  display: table;
+
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.tabledata Table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabledata tr {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 20% 15% 15% 15% 15% 20%;
+  padding: 0.4rem;
+}
+
+.threadtable tr {
+  background-color: brown;
+  margin: 0.3rem;
+}
+
+.platform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tablebody tr {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 20% 15% 15% 15% 15% 20%;
+  padding: 0.4rem;
+}
+
+.tablebody tr {
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  border-bottom: 2px solid darkgrey;
+  align-items: center;
+  justify-content: center;
+}
+.threadtable th,
+.tabledata td {
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.pagenumber {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+}
+
+.pagination > li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  text-decoration: none;
+  background-color: #fff;
+
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  outline: none;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+@media screen and (max-width: 1290px) {
+  .righttopcard img {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+  .righttopcard h3 {
+    font-size: 1.8vw;
+  }
+  .dropdown p {
+    width: 2rem;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0.2rem;
+  }
+  .datebutton {
+    background: none;
+    padding: 0.2rem;
+    margin-right: 1rem;
+    color: #fff;
+    border: 1px solid white;
+    font-size: 2vw;
+  }
+  .righttop {
+    margin-bottom: 1rem;
+  }
+
+  .pagination > li > a,
+  .pagination > li > span {
+    padding: 3px 5px;
+    border-radius: 4px;
+  }
+  .rdrCalendarWrapper {
+    max-width: 70vw;
+  }
+  .datepicker-popup .rdrDefinedRangesWrapper {
+    display: none;
+  }
+  .rdrDateDisplayWrapper input {
+    font-size: 2vw;
+  }
+  .rdrMonthAndYearWrapper span {
+    width: 40%;
+    font-size: 2vw;
+  }
+}
